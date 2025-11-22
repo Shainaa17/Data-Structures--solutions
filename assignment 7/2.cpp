@@ -6,20 +6,12 @@ void improvedSelectionSort(int arr[], int n) {
 
     while(start < end) {
         int min = start, max = start;
-
-        // Find min and max in the unsorted portion
         for(int i = start; i <= end; i++) {
             if(arr[i] < arr[min]) min = i;
             if(arr[i] > arr[max]) max = i;
         }
-
-        // Swap minimum with start
         swap(arr[start], arr[min]);
-
-        // If max was at start, update maxIndex
         if(max == start) max = min;
-
-        // Swap maximum with end
         swap(arr[end], arr[max]);
 
         start++;

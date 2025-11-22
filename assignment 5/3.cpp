@@ -47,7 +47,7 @@ public:
         }
 
         Node *temp = head;
-        if (count % 2 != 0) {  // odd length
+        if (count % 2 != 0) {  
             int mid = count / 2;
             int c = 0;
             while (temp != NULL) {
@@ -57,7 +57,7 @@ public:
                 c++;
                 temp = temp->next;
             }
-        } else {  // even length
+        } else {
             int mid1 = count / 2 - 1;
             int mid2 = count / 2;
             int c = 0;

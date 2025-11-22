@@ -1,9 +1,7 @@
 #include <iostream>
 using namespace std;
-
 int main() {
     int rows, cols;
-
     cout << "Enter number of rows and columns: ";
     cin >> rows >> cols;
     int matrix[rows][cols]; 
