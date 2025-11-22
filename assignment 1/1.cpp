@@ -62,7 +62,7 @@ void linearSearch() {
         cout << "Element not found"<<endl;
     }
 }
-
+36\
 int main() {
     int choice;
     while (true) {
